@@ -12,7 +12,7 @@ file(GLOB sources ./*.h ./*.c ./*.cpp)
 #file(GLOB_RECURSE sources_test src/test/*.cpp)
 #file(GLOB_RECURSE data resources/*)
 
-add_executable(calApp WIN32 ${sources})
+add_executable(calApp ${sources})
 #add_executable(calApp calfaq.c Main.cpp)
 
 # this lets me include files relative to the root source directory with a <> pair

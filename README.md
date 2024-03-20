@@ -9,7 +9,7 @@ CALFAQ Web Page: [https://www.tondering.dk/claus/calendar.html](https://www.tond
 CALFAQ source-code Obtained from: [https://www.tondering.dk/dl.php?file=calfaq.zip](https://www.tondering.dk/dl.php?file=calfaq.zip)  
 
 
-## Compiling Instructions
+## Compiling Instructions - Linux
 Install CMake and all other required compilers and tools.
 Then use:
 ```
@@ -50,6 +50,57 @@ Hello Calendar World!
 Enter a number from 1 to 9
 9
 wsl01@ABC:~/Source/calfaq$
+```
+
+## Compiling Instructions - Windows 11
+Install CMake and Vistual Studio 2017 Build Tools.
+Then use:
+```
+C:\Users\XYZ\Source\calfaq>cmake -B ./output
+-- Building for: Visual Studio 17 2022
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.26080.
+-- The C compiler identification is MSVC 19.39.33520.0
+-- The CXX compiler identification is MSVC 19.39.33520.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (5.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/XYZ/Source/calfaq/output
+
+C:\Users\XYZ\Source\calfaq>cmake --build ./output
+MSBuild version 17.9.5+33de0b227 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/XYZ/Source/calfaq/CMakeLists.txt
+  Main.cpp
+  calfaq.cpp
+  Generating Code...
+  calApp.vcxproj -> C:\Users\XYZ\Source\calfaq\output\Debug\calApp.exe
+  Building Custom Rule C:/Users/XYZ/Source/calfaq/CMakeLists.txt
+
+C:\Users\XYZ\Source\calfaq>output\Debug\calApp.exe
+Hello Calendar World!
+
+
+
+                        Choose A Calendar Function
+                        ==========================
+
+        1.      Leap Year
+        9.      Exit
+
+Enter a number from 1 to 9
+9
+
+C:\Users\XYZ\Source\calfaq>
 ```
 
 
