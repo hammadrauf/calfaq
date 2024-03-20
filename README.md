@@ -1,3 +1,60 @@
+# CALFAQ Menu Wrapper
+
+## About this Project
+This project is simply a wrapper for the various CalFAQ source code functions. It can
+also serve as a base "CMakeLists.txt" based build project. It may be compiled using CMake 
+in Windows or  Linux.
+
+CALFAQ Web Page: [https://www.tondering.dk/claus/calendar.html](https://www.tondering.dk/claus/calendar.html)
+CALFAQ source-code Obtained from: [https://www.tondering.dk/dl.php?file=calfaq.zip](https://www.tondering.dk/dl.php?file=calfaq.zip)
+
+
+## Compiling Instructions
+Install CMake and all other required compilers and tools.
+Then use:
+'''
+wsl01@ABC:~/Source/calfaq$ cmake -B ./output
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wsl01/Source/calfaq/output
+
+wsl01@ABC:~/Source/calfaq$ cmake --build ./output
+[ 33%] Building CXX object CMakeFiles/calApp.dir/Main.cpp.o
+[ 66%] Building CXX object CMakeFiles/calApp.dir/calfaq.cpp.o
+[100%] Linking CXX executable calApp
+[100%] Built target calApp
+
+wsl01@ABC:~/Source/calfaq$ output/calApp
+Hello Calendar World!
+
+
+
+                        Choose A Calendar Function
+                        ==========================
+
+        1.      Leap Year
+        9.      Exit
+
+Enter a number from 1 to 9
+9
+wsl01@ABC:~/Source/calfaq$
+'''
+
+
+## CALFAQ Readme
+
 CALFAQ version 1.3, 17 November 2021
 ====================================
 
