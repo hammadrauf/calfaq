@@ -3,16 +3,16 @@
 ## About this Project
 This project is simply a wrapper for the various CalFAQ source code functions. It can
 also serve as a base "CMakeLists.txt" based build project. It may be compiled using CMake 
-in Windows or  Linux.
-
-CALFAQ Web Page: [https://www.tondering.dk/claus/calendar.html](https://www.tondering.dk/claus/calendar.html)
-CALFAQ source-code Obtained from: [https://www.tondering.dk/dl.php?file=calfaq.zip](https://www.tondering.dk/dl.php?file=calfaq.zip)
+in Windows or  Linux.  
+  
+CALFAQ Web Page: [https://www.tondering.dk/claus/calendar.html](https://www.tondering.dk/claus/calendar.html)  
+CALFAQ source-code Obtained from: [https://www.tondering.dk/dl.php?file=calfaq.zip](https://www.tondering.dk/dl.php?file=calfaq.zip)  
 
 
 ## Compiling Instructions
 Install CMake and all other required compilers and tools.
 Then use:
-'''
+```
 wsl01@ABC:~/Source/calfaq$ cmake -B ./output
 -- The C compiler identification is GNU 11.4.0
 -- The CXX compiler identification is GNU 11.4.0
@@ -50,21 +50,18 @@ Hello Calendar World!
 Enter a number from 1 to 9
 9
 wsl01@ABC:~/Source/calfaq$
-'''
+```
 
 
 ## CALFAQ Readme
 
-CALFAQ version 1.3, 17 November 2021
-====================================
+### CALFAQ version 1.3, 17 November 2021
 
-COPYRIGHT
----------
+### COPYRIGHT
   These functions are Copyright (c) 2021 by Claus Tondering
   (claus@tondering.dk).
 
-LICENSE
--------
+### LICENSE
   The code is distributed under the Boost Software License, which says:
 
     Boost Software License - Version 1.0 - August 17th, 2003
@@ -91,22 +88,21 @@ LICENSE
     OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
     USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-DESCRIPTION
------------
+### DESCRIPTION
 
   These functions are an implementation in the C language of the formulas
   presented in the Calendar FAQ at
-  http://www.tondering.dk/claus/calendar.html.
-
-  The documentation of each function is found in the .c and .h files.
-
+  [http://www.tondering.dk/claus/calendar.html](http://www.tondering.dk/claus/calendar.html).  
+  
+  The documentation of each function is found in the .c and .h files.  
+  
   The implementation follows the formulas mentioned in the FAQ quite closely.
   The focus of the implementation is on simplicity and clarity. For this
   reason, no complex data structures or classes are used, nor has any attempt
   been made to optimize the code. Also, no verification of the input
-  parameters is performed (except in the function simple_gregorian_easter).
-
+  parameters is performed (except in the function simple_gregorian_easter).  
+  
   All numbers (including Julian Day Numbers which currently have values of
   almost 2,500,000) are assumed to be representable as variables of type
-  'int'.
+  'int'.  
 
